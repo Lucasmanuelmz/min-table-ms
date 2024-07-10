@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Qoadro de mensagens</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/new">Nova mensagem</a> <br><br>
+    <%messages.forEach(message => {%>
+      <%= message.text%> <br>
+      <%=message.user%> <br>
+      <%=message.added%> 
+      <br> <br>
+   <% })%>
+  </body>
+</html>
